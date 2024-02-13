@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            padding-top: 20px;
+        }
+        .profile-image {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .bio {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .interests {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#picture">Picture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="bio">
+        <h1>About Me</h1>
+        <p>Add your bio here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus erat sit amet lectus ultrices, id tempor nisl ultrices. Ut auctor vitae dolor et tincidunt.</p>
+    </div>
+    <div class="container" id="picture">
+        <h1>My Picture</h1>
+        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1731692579136135168/pVPX8t2N_400x400.jpg" alt="Your Name">
+    </div>
+    <div class="container" id="interests">
+        <h1>Interests</h1>
+        <ul>
+            <li>Interest 1</li>
+            <li>Interest 2</li>
+            <li>Interest 3</li>
+            <!-- Add more interests as needed -->
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
