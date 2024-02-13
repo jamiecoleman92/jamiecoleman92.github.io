@@ -11,6 +11,22 @@
             padding: 0;
             background-color: #f2f2f2;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -31,22 +47,28 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
+    <div class="navbar">
+        <a href="#bio">Bio</a>
+        <a href="#picture">Picture</a>
+        <a href="#interests">Interests</a>
+        <!-- Add more navigation links as needed -->
+    </div>
+    <div class="container" id="bio">
+        <h1>About Me</h1>
+        <p>Add your bio here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus erat sit amet lectus ultrices, id tempor nisl ultrices. Ut auctor vitae dolor et tincidunt.</p>
+    </div>
+    <div class="container" id="picture">
+        <h1>My Picture</h1>
         <img class="profile-image" src="your_picture.jpg" alt="Your Name">
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Add your bio here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus erat sit amet lectus ultrices, id tempor nisl ultrices. Ut auctor vitae dolor et tincidunt.</p>
-        </div>
-        <div class="interests">
-            <h2>Interests</h2>
-            <ul>
-                <li>Interest 1</li>
-                <li>Interest 2</li>
-                <li>Interest 3</li>
-                <!-- Add more interests as needed -->
-            </ul>
-        </div>
+    </div>
+    <div class="container" id="interests">
+        <h1>Interests</h1>
+        <ul>
+            <li>Interest 1</li>
+            <li>Interest 2</li>
+            <li>Interest 3</li>
+            <!-- Add more interests as needed -->
+        </ul>
     </div>
 </body>
 </html>
