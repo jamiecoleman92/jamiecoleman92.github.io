@@ -1,41 +1,100 @@
 <!DOCTYPE html>
-<html>
-<title>All Things Jamie Lee Coleman</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Things Jamie Lee Coleman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(65, 63, 63);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-image {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .bio {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .events {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
 <body>
-
-
-<h1>Bio</h1>
-<p>Jamie is a Developer Advocate for Sonatype formally IBM, based in the UK. He talks about the importance of security in software, improving developer productivity and raising awareness about energy consumption of technology.
-    Passionate about discovering ways to help reduce developers carbon footprint, he is also a subject matter expert in containerised solutions and build technologies. He fell in love with Java at University and has gone on to talk at many conferences about using Java with microservices and related technologies. He has worked on a wide variety of projects such as modernising IBM CICS mainframe testing infrastructure, creating, and automating the creation of Docker images for IBM’s products and contributing to a DevOps pipeline offering.
-</p>
-<img src="https://pbs.twimg.com/profile_images/1731692579136135168/pVPX8t2N_400x400.jpg" alt="Profile Picture"> 
-
-<h1>
-    Presentations
-</h1>
-<p>
-    This section is to help people who have attended one of my talks find the slides and any related information in one place.
-</p>
-
-<h2>
-    Current Talks
-</h2>
-<p>
-    These are talks that have been accepted and delivered in the last year 
-</p>
-<a href="talks/talk1.html">The Death Star and the Ultimate Vulnerability</a>
-
-<h2>
-    New Talks
-</h2>
-<p>
-    These are talks that have been accepted but not yet delivered
-</p>
-<h2>
-    Old Talks
-</h2>
-<p>
-    These are talks that have been delivered over a year ago
-</p>
+    <div class="navbar">
+        <a href="#bio">Bio</a>
+        <a href="#picture">Picture</a>
+        <a href="#events">Interests</a>
+        <!-- Add more navigation links as needed -->
+    </div>
+    <div class="container" id="bio">
+        <h1>Bio</h1>
+        <p>Jamie is a Developer Advocate for Sonatype formally IBM, based in the UK. He talks about the importance of security in software, improving developer productivity and raising awareness about energy consumption of technology.
+            Passionate about discovering ways to help reduce developers carbon footprint, he is also a subject matter expert in containerised solutions and build technologies. He fell in love with Java at University and has gone on to talk at many conferences about using Java with microservices and related technologies. He has worked on a wide variety of projects such as modernising IBM CICS mainframe testing infrastructure, creating, and automating the creation of Docker images for IBM’s products and contributing to a DevOps pipeline offering.
+            </p>
+    </div>
+    <div class="container" id="picture">
+        <h1>My Picture</h1>
+        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1731692579136135168/pVPX8t2N_400x400.jpg" alt="Jamie Lee Coleman">
+    </div>
+    <div class="container" id="events">
+        <h1>Previous Speaking Experiance</h1>
+        <ul>
+            <li>Devoxx Ukraine</li>
+            <li>Devoxx Belgium</li>
+            <li>Devoxx France</li>
+            <li>Devoxx Poland</li>
+            <li>Devoxx Morocco</li>
+            <li>J4K</li>
+            <li>JAX</li>
+            <li>Eclipse Con</li>
+            <li>FOSDEM</li>
+            <li>DevNexus</li>
+            <li>GIDS</li>
+            <li>IBM Think</li>
+            <li>Voxxed Days Cluj</li>
+            <li>Voxxed Days Bucharest</li>
+            <li>Voxxed Days Athens</li>
+            <li>Voxxed Days Zurich</li>
+            <li>Voxxed Days Thessaloniki</li>
+            <li>Codemotion Romania</li>
+            <li>Codecamp Romania</li>
+            <li>Javantura</li>
+            <li>JCON</li>
+            <li>JNAtion</li>
+            <li>JavaCro</li>
+            <li>CASCON</li>
+            <li>JPrime</li>
+            <li>JFall</li>
+            <li>DevOpsDays Amsterdam</li>
+            <li>DevOpsDays Warsaw</li>
+        </ul>
+    </div>
 </body>
 </html>
