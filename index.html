@@ -1,122 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Things Jamie Lee Coleman</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .profile-image {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-        .bio {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        .events {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        .talks {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Dancing Developer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
-<body>
-    <div class="navbar">
-        <a href="#bio">Bio</a>
-        <a href="#preEvents">Speaking Experiance</a>
-        <a href="#talks">Delivered Talks</a>
-        <a href="/other/events.html">2024 Events</a>
-        <a href="/articles/developer.html">Developer Articles</a>
-        <a href="/articles/devops.html">DevOps Articles</a>
-        <a href="/articles/security.html">Security Articles</a>
-        <a href="https://twitter.com/Jamie_Lee_C">Twitter</a>
-        <a href="https://www.linkedin.com/in/jamie-coleman/">LinkedIn</a>
-    </div>
-    <div class="container" id="picture">
-        <img class="profile-image" src="https://pbs.twimg.com/profile_images/1731692579136135168/pVPX8t2N_400x400.jpg" alt="Jamie Lee Coleman">
-    </div>
-    <div class="container" id="bio">
-        <h1>Bio</h1>
-        <p>Jamie is a Developer Advocate for Sonatype formally IBM, based in the UK. He talks about the importance of security in software, improving developer productivity and raising awareness about energy consumption of technology.
-            Passionate about discovering ways to help reduce developers carbon footprint, he is also a subject matter expert in containerised solutions and build technologies. He fell in love with Java at University and has gone on to talk at many conferences about using Java with microservices and related technologies. He has worked on a wide variety of projects such as modernising IBM CICS mainframe testing infrastructure, creating, and automating the creation of Docker images for IBM’s products and contributing to a DevOps pipeline offering.
-            </p>
-    </div>
-    <div class="container" id="preEvents">
-        <h1>Previous Speaking Experiance</h1>
-        <h3>Conferences I remember speaking at...</h3>
-        <ul>
-            <li>Devoxx Ukraine</li>
-            <li>Devoxx Belgium</li>
-            <li>Devoxx France</li>
-            <li>Devoxx Morocco</li>
-            <li>J4K</li>
-            <li>JAX</li>
-            <li>Eclipse Con</li>
-            <li>FOSDEM</li>
-            <li>DevNexus</li>
-            <li>GIDS</li>
-            <li>IBM Think</li>
-            <li>Voxxed Days Cluj</li>
-            <li>Voxxed Days Bucharest</li>
-            <li>Voxxed Days Athens</li>
-            <li>Voxxed Days Zurich</li>
-            <li>Voxxed Days Thessaloniki</li>
-            <li>Voxxed Days Ioannina</li>
-            <li>Codemotion Romania</li>
-            <li>Codecamp Romania</li>
-            <li>Javantura</li>
-            <li>JCON</li>
-            <li>JNAtion</li>
-            <li>JavaCro</li>
-            <li>CASCON</li>
-            <li>JPrime</li>
-            <li>JFall</li>
-            <li>DevOpsDays Amsterdam</li>
-            <li>DevOpsDays Warsaw</li>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md navbar-expand-md-1 fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Dancing Developer</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#bio">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#conferences">Conferences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#latesttalks">Talks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#upcoming">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#articles">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
         </ul>
+      </div>
     </div>
-    <div class="container" id="talks">
-        <h1>Latest Delivered Talks</h1>
-        <h3>Talks delivered over the past 2 years with links to slides and recordings</h3>
-        <li><a href="talks/talk0.html">Magic of Automation and Everyday Chores</a></li>
-        <li><a href="talks/talk1.html">Deploy and update Jakarta EE & MicroProfile applications at light speed with Paketo</a></li>
-        <li><a href="talks/talk2.html">Navigating the Wild West of Building and Deploying Containers</a></li>
-        <li><a href="talks/talk3.html">Why Building Your Ship (Application) with Raw Materials is a Bad Idea!</a></li>
-        <li><a href="talks/talk4.html">Using Static Analysis Tools to Become a Superhero Programmer</a></li>
-        <li><a href="talks/talk5.html">The Death Star and the ultimate vulnerability</a></li>
-        <li><a href="talks/talk6.html">To the Left, to the Left: All your Security Shifted to the Left (Workshop)</a></li>
-        <li><a href="talks/talk7.html">The Secret Life of Maven Central</a></li>
-        <li><a href="talks/talk8.html">Open Source Licence to Kill</a></li>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-jamie3.png)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Jamie Coleman</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">The Dancing Developer Advocate</span><strong
+              class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
     </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="bio" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="about-img">
+                    <img src="img/jamie.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Bio
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Jamie is a Developer Advocate for Sonatype formally IBM, based in the UK. He talks about the
+                    importance of security in software, improving developer productivity and raising awareness about
+                    energy consumption of technology.
+                  </p>
+                  <p class="lead">
+                    Passionate about discovering ways to help reduce developers carbon footprint, he is also a subject
+                    matter expert in containerised solutions and build technologies. He fell in love with Java at
+                    University and has gone on to talk at many conferences about using Java with microservices and
+                    related technologies.
+                  </p>
+                  <p class="lead">
+                    He has worked on a wide variety of projects such as modernising IBM CICS mainframe testing
+                    infrastructure, creating, and automating the creation of Docker images for IBM’s products and
+                    contributing to a DevOps pipeline offering.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Services Star /-->
+  <section id="conferences" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Conferences
+            </h3>
+            <p class="subtitle-a">
+              A few of the many events I've spoken at
+            </p>
+            <div class="line-mf"></div>
+            <div class="logos">
+              <img src="img/logos2.png" class="logos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-calendar"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">100</p>
+              <span class="counter-text">EVENTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-map"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">45</p>
+              <span class="counter-text">CITIES VISITED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-speakerphone"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">150</p>
+              <span class="counter-text">TALKS DELIVERED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">50,000</p>
+              <span class="counter-text">DEVELOPERS REACHED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Portfolio Star /-->
+  <section id="latesttalks" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Latest Talks
+            </h3>
+            <p class="subtitle-a">
+              Talks delivered over the past 2 years with links to slides and recordings
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="magic_of_automation.html">
+              <div class="work-img">
+                <img src="img/magic.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Magic of Automation and Everyday Chores</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/microprofile.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/microprofile.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Deploy and update Jakarta EE & MicroProfile applications at light speed with
+                      Paketo</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/wild_west.jpeg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/wild_west.jpeg" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Navigating the Wild West of Building and Deploying Containers</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/raw_materials.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/raw_materials.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Why Building Your Ship (Application) with Raw Materials is a Bad Idea!</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/static_tools.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/static_tools.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Using Static Analysis Tools to Become a Superhero Programmer</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/death_star.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/death_star.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">The Death Star and the ultimate vulnerability</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/to_the_left.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/to_the_left.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">To the Left, to the Left: All your Security Shifted to the Left (Workshop)</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/secret_life.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/secret_life.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">The Secret Life of Maven Central</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/opensource_license_to_kill.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/opensource_license_to_kill.png" alt="" class="img-article">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Open Source Licence to Kill</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Testimonials Star /-->
+  <section id="upcoming">
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                    Upcoming Events
+                  </h3>
+                  <p class="subtitle-a">
+                    This list is constantly updated upon my confirmation of attendance
+                  </p>
+                  <div class="line-mf"></div>
+                  <br>
+                  <h3 class="card-title">June</h3>
+                  <a href="https://www.kcdc.info/">
+                    <p>KCDC, Kansas City (27th - 28th June)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Blog Star /-->
+  <section id="articles" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Articles
+            </h3>
+            <p class="subtitle-a">
+              Articles, tutorials and blogs
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://www.sonatype.com/blog/the-impact-of-automating-open-source-dependency-management"><img
+                  src="img/impact_automating_open_source.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Article</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a
+                  href="https://www.sonatype.com/blog/the-impact-of-automating-open-source-dependency-management">The
+                  impact of automating open source dependency management</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://foojay.io/today/how-software-companies-give-away-stuff-for-free/"><img
+                  src="img/free_stuff.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Article</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a
+                  href="https://foojay.io/today/how-software-companies-give-away-stuff-for-free/">How Software Companies
+                  Give Away Stuff for Free</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://foojay.io/today/sboms-and-software-composition-analysis/"><img src="img/SBOMs.png" alt=""
+                  class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Article</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="https://foojay.io/today/sboms-and-software-composition-analysis/">SBOMs
+                  and Software Composition Analysis</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://developer.ibm.com/articles/writing-function-tests-for-liberty/"><img
+                  src="img/liberty_function_tests.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Blog</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="https://developer.ibm.com/articles/writing-function-tests-for-liberty/">3
+                  ways to write function tests for Liberty</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://openliberty.io/blog/2022/08/19/open-liberty-semeru-performance.html"><img
+                  src="img/openliberty_semeru.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Blog</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a
+                  href="https://openliberty.io/blog/2022/08/19/open-liberty-semeru-performance.html">Open Liberty and
+                  Semeru Runtimes, cloud-native performance that matters</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://openliberty.io/blog/2021/07/26/cloud-hosted-guides-post.html"><img
+                  src="img/openliberty_cloud.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Blog</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a
+                  href="https://openliberty.io/blog/2021/07/26/cloud-hosted-guides-post.html">Interactive developer
+                  guides running in the cloud</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://openliberty.io/guides/microprofile-jwt.html"><img src="img/microprofile.png" alt=""
+                  class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Tutorial</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="https://openliberty.io/guides/microprofile-jwt.html">Securing
+                  microservices with JSON Web Tokens</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://openliberty.io/guides/testcontainers.html"><img src="img/production_tests.png" alt=""
+                  class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Tutorial</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="https://openliberty.io/guides/testcontainers.html">Building
+                  true-to-production integration tests with Testcontainers</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a
+                href="https://kubernetes.io/docs/tutorials/configuration/configure-java-microservice/configure-java-microservice/"><img
+                  src="img/kube.png" alt="" class="img-fluid img-article"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Tutorial</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a
+                  href="https://kubernetes.io/docs/tutorials/configuration/configure-java-microservice/configure-java-microservice/">Externalizing
+                  config using MicroProfile, ConfigMaps and Secrets</a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      If you'd like to have a chat, you can reach me via X or LinkedIn
+                    </p>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/jamie-coleman/"><span class="ico-circle"><i
+                              class="ion-social-linkedin"></i></span></a></li>
+                      <li><a href="https://x.com/Jamie_Lee_C"><span class="ico-circle"><i
+                              class="ion-social-twitter"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
